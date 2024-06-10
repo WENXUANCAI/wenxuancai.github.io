@@ -1,302 +1,560 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <!-- Metadata for the Webpage -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name Here</title>
 
-  <!-- Favicons -- We recommend this site for generating favicons: https://www.favicon-generator.org/ -->
-  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="img/favicons/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <!-- Bootstrap CSS files-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <!-- jQuery UI css -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-  <!-- jQuery UI CSS (optional) -->
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <!-- Google web fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <!-- Google font, Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome Web Icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- FontAwesome icon include -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Academicons Courtesy of https://jpswalsh.github.io/academicons/ -->
-  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-
-  <!-- Local styles -->
+  <!-- Main local styles -->
   <link rel="stylesheet" href="css/main.css">
 
-  <!-- Teaching Panel styles -->
-  <link rel="stylesheet" href="css/teaching-panels.css">
-
-
-  <style>
-    /* plus glyph for showing collapsible panels */
-    .panel-heading .accordion-plus-toggle:before {
-      font-style: normal;
-      font-variant: normal;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      content: "\f068";
-      float: right;
-      color: RGBA(119, 136, 153, .5);
-    }
-
-    .panel-heading .accordion-plus-toggle.collapsed:before {
-      font-style: normal;
-      font-variant: normal;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      content: "\f067";
-      color: RGBA(119, 136, 153, .5);
-    }
-
-    /* sets the link to the width of the entire panel title */
-    .panel-title>a {
-      display: block;
-    }
-  </style>
+  <title>Jane Smith, PhD</title>
 
 </head>
 
-<body>
+<body id="top">
 
   <!-- navbar include -->
-  <div id="navbar-include"></div>
+  <div id="page-navbar"></div>
 
-  <div class="spacer-div-3 hidden-xs hidden-xs"></div>
+  <!-- main wrapper div -->
+  <div class="container" id="wrapper">
 
-  <!-- Main content    -->
-  <div id="main-container" class="container">
+    <div class="row mx-4" id="teaching-section">
 
-    <div class="row">
       <div class="col-sm-12">
+        <h1 id="page-lead">Teaching</h1>
 
-        <h1>Teaching</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, sunt, reprehenderit asperiores molestias praesentium facilis porro laborum consectetur obcaecati modi ut quis dicta temporibus quo saepe? Maiores tempore, vero dignissimos.</p>
 
-        <blockquote>{Sample or quote from your teaching philosophy}
-          <cite title="source title">&mdash; Source/Author</cite>
-        </blockquote>
+        <p>For more on my pedagogical approach, please see my <a href="" target="_blank">Teaching Philosophy</a>.</p>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque temporibus sit tempora rem. Pariatur dolore minima, corporis deserunt. Est doloribus, explicabo, porro obcaecati delectus culpa. Tempore ipsum earum, praesentium cum animi accusamus porro, repellat debitis assumenda. Voluptates voluptatibus accusamus dignissimos iure sunt, autem dolorum impedit.</p>
-        <p>For more on my pedagogical approach, see my <a href="#" title="Read more" target="_blank">Teaching Philosophy</a>.</p>
+        <h3><span>Courses Taught</span></h3>
+        <p class='text-right'><span class="badge badge-primary expander pointer">show all</span></p>
 
-
-
-        <h3 class="push-down-3"><span>Courses Taught</span></h3>
-
-        <p class='text-right bright-blue'><span class="badge expander badge-bright-blue pointer">show all</span></p>
-
-        <h4 class="push-down-3 gray"><em>University One</em></h4>
-
-        <div class="panel-group" id="University-1" role="tablist">
-
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading-8752665301">
-              <h5 class="panel-title">
-                <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="" href="#collapse-8752665301" aria-expanded="false" aria-controls="collapse-8752665301">Course 1</a>
-              </h5>
+        <h4 class="mt-2">First University</h4>
+        <!-- Notre Dame ------------------------------------------->
+        <div class="accordion" id="accordion19269006">
+          <div class="card">
+            <div class="card-header" id="header-0">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel95350520" aria-expanded="false" aria-controls="header-0">ENGL 13450 | Some Course Title</button>
+              </h2>
             </div>
-            <div id="collapse-8752665301" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-8752665301">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, accusantium doloribus! Sequi ad omnis facere illo, dignissimos vel officiis, architecto sit laborum labore, quidem cumque ipsam minima est cum
-                eligendi.</div>
+            <div id="panel95350520" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
           </div>
-
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading-8774401">
-              <h5 class="panel-title">
-                <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="" href="#collapse-8774401" aria-expanded="false" aria-controls="collapse-8774401">Course 2</a>
-              </h5>
+          <div class="card">
+            <div class="card-header" id="header-1">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel18617135" aria-expanded="false" aria-controls="header-1">ENGL 13450 | Some Course Title</button>
+              </h2>
             </div>
-            <div id="collapse-8774401" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-8774401">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim voluptatibus minus atque suscipit, labore eius, nostrum laboriosam! Minima labore, dicta voluptatum quaerat impedit perferendis? Omnis quidem ab
-                voluptatem perferendis asperiores.</div>
-            </div>
-          </div>
-
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading-5477158">
-              <h5 class="panel-title">
-                <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="" href="#collapse-5477158" aria-expanded="false" aria-controls="collapse-5477158">Course 3</a>
-              </h5>
-            </div>
-            <div id="collapse-5477158" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-5477158">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt velit dignissimos tempora esse, laudantium error nam corporis quos commodi maxime molestias consequuntur. Recusandae pariatur accusantium
-                perspiciatis, nesciunt vitae minima itaque?</div>
+            <div id="panel18617135" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
           </div>
-
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading-9716944">
-              <h5 class="panel-title">
-                <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="" href="#collapse-9716944" aria-expanded="false" aria-controls="collapse-9716944">Course 4</a>
-              </h5>
+          <div class="card">
+            <div class="card-header" id="header-2">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel71020550" aria-expanded="false" aria-controls="header-2">ENGL 13450 | Some Course Title</button>
+              </h2>
             </div>
-            <div id="collapse-9716944" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-9716944">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus animi nisi repellendus aut non aperiam iste nostrum enim porro, ea quaerat sed numquam cupiditate iusto praesentium, quia amet? Eaque, facere.</div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading-4195490">
-              <h5 class="panel-title">
-                <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="" href="#collapse-4195490" aria-expanded="false" aria-controls="collapse-4195490">Course 5</a>
-              </h5>
-            </div>
-            <div id="collapse-4195490" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-4195490">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, distinctio velit molestias nobis inventore, similique debitis temporibus corporis quo dolore reiciendis. Pariatur suscipit, ullam fugiat fuga libero
-                corrupti ab itaque!</div>
+            <div id="panel71020550" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
           </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading-5764911">
-              <h5 class="panel-title">
-                <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="" href="#collapse-5764911" aria-expanded="false" aria-controls="collapse-5764911">Course 6</a>
-              </h5>
+          <div class="card">
+            <div class="card-header" id="header-3">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel31965385" aria-expanded="false" aria-controls="header-3">ENGL 13450 | Some Course Title</button>
+              </h2>
             </div>
-            <div id="collapse-5764911" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-5764911">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nisi voluptates minima hic unde ut voluptatibus consequuntur voluptatem quisquam asperiores, sequi suscipit dicta, dolor, temporibus animi veritatis.
-                Modi, delectus, aut!</div>
+            <div id="panel31965385" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
           </div>
-
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading-147620">
-              <h5 class="panel-title">
-                <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="" href="#collapse-147620" aria-expanded="false" aria-controls="collapse-147620">Course 7</a>
-              </h5>
+          <div class="card">
+            <div class="card-header" id="header-4">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel17611763" aria-expanded="false" aria-controls="header-4">ENGL 13450 | Some Course Title</button>
+              </h2>
             </div>
-            <div id="collapse-147620" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-147620">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint blanditiis, quia iusto, beatae suscipit nostrum. Et explicabo sed facere molestiae reiciendis! Perferendis consequatur dolores, placeat aliquid id
-                dignissimos, excepturi deleniti.
+            <div id="panel17611763" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header-5">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel95112608" aria-expanded="false" aria-controls="header-5">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel95112608" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header-6">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel1560334" aria-expanded="false" aria-controls="header-6">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel1560334" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header-7">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel21636690" aria-expanded="false" aria-controls="header-7">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel21636690" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header-8">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel38749764" aria-expanded="false" aria-controls="header-8">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel38749764" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header-9">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel8021947" aria-expanded="false" aria-controls="header-9">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel8021947" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
           </div>
         </div>
 
 
-        <h4 class="push-down-3 gray"><em>University Two</em></h4>
+        <!--Michigan Tech ---------------------------------------------->
+        <h4 class="mt-5">Another University</h4>
 
-        <div class="panel-group" id="university-2" role="tablist">
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading4574559">
-              <h5 class="panel-title">
-                <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="" href="#collapse4574559" aria-expanded="false" aria-controls="collapse4574559">Course 1</a>
-              </h5>
+        <div class="accordion" id="accordion43221031">
+          <div class="card">
+            <div class="card-header" id="header-0">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel54852045" aria-expanded="false" aria-controls="header-0">ENGL 13450 | Some Course Title</button>
+              </h2>
             </div>
-            <div id="collapse4574559" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4574559">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae mollitia ullam velit. Hic sint provident, eligendi quis est deserunt ex amet doloremque. Nam eaque, voluptatum numquam! Voluptatibus voluptate,
-                placeat nobis!</div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading5428718">
-              <h5 class="panel-title">
-                <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="" href="#collapse5428718" aria-expanded="false" aria-controls="collapse5428718">Course 2</a>
-              </h5>
-            </div>
-            <div id="collapse5428718" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5428718">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere repellendus iusto veritatis tempore molestiae aperiam ipsa ea corporis, facilis doloremque magnam nam qui inventore sint, a quis fugiat in illo.
+            <div id="panel54852045" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
           </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading766918">
-              <h5 class="panel-title">
-                <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="" href="#collapse766918" aria-expanded="false" aria-controls="collapse766918">Course 3</a>
-              </h5>
+          <div class="card">
+            <div class="card-header" id="header-1">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel14683323" aria-expanded="false" aria-controls="header-1">ENGL 13450 | Some Course Title</button>
+              </h2>
             </div>
-            <div id="collapse766918" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading766918">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptatum eaque aliquid cumque nisi molestias itaque eum provident placeat dolor molestiae, vero aut labore reiciendis quam et tempore voluptatibus
-                beatae.
+            <div id="panel14683323" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
           </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading1025199">
-              <h5 class="panel-title">
-                <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="" href="#collapse1025199" aria-expanded="false" aria-controls="collapse1025199">Course 4</a>
-              </h5>
+          <div class="card">
+            <div class="card-header" id="header-2">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel30108224" aria-expanded="false" aria-controls="header-2">ENGL 13450 | Some Course Title</button>
+              </h2>
             </div>
-            <div id="collapse1025199" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1025199">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita molestias, beatae nisi illo dolor aperiam ex consequatur maiores delectus maxime labore quidem dicta praesentium, eveniet itaque enim blanditiis.
-                Perspiciatis, nesciunt..</div>
+            <div id="panel30108224" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
           </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading9284651">
-              <h5 class="panel-title">
-                <a role="button" data-toggle="collapse" class="accordion-toggle accordion-plus-toggle collapsed" data-parent="" href="#collapse9284651" aria-expanded="false" aria-controls="collapse9284651">Course 5</a>
-              </h5>
+          <div class="card">
+            <div class="card-header" id="header-3">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel81884000" aria-expanded="false" aria-controls="header-3">ENGL 13450 | Some Course Title</button>
+              </h2>
             </div>
-            <div id="collapse9284651" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9284651">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque harum fuga impedit corporis cumque quos. Rem itaque repudiandae hic dolorem voluptas necessitatibus facere, aut, rerum autem quam iure illum amet.
+            <div id="panel81884000" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header-4">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel61061606" aria-expanded="false" aria-controls="header-4">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel61061606" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header-5">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel74840549" aria-expanded="false" aria-controls="header-5">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel74840549" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header-6">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel35182675" aria-expanded="false" aria-controls="header-6">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel35182675" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header-7">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel18920125" aria-expanded="false" aria-controls="header-7">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel18920125" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header-8">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel20085700" aria-expanded="false" aria-controls="header-8">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel20085700" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header-9">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel22859010" aria-expanded="false" aria-controls="header-9">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel22859010" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- San Diego State ------------------------------------------------->
+        <h4 class="mt-5">Yet a Third University</h4>
+
+        <div class="accordion" id="accordion7874405">
+          <div class="card">
+            <div class="card-header" id="header-0">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel70733045" aria-expanded="false" aria-controls="header-0">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel70733045" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header-1">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel59202361" aria-expanded="false" aria-controls="header-1">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel59202361" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header-2">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel75228224" aria-expanded="false" aria-controls="header-2">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel75228224" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header-3">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel12587128" aria-expanded="false" aria-controls="header-3">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel12587128" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header-4">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel27146645" aria-expanded="false" aria-controls="header-4">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel27146645" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header-5">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel74352695" aria-expanded="false" aria-controls="header-5">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel74352695" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header-6">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel80057352" aria-expanded="false" aria-controls="header-6">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel80057352" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header-7">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel23819407" aria-expanded="false" aria-controls="header-7">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel23819407" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header-8">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel88637610" aria-expanded="false" aria-controls="header-8">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel88637610" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header-9">
+              <h2 class="mb-0">
+                <button class="btn btn-transparent float-right"><i class="fa fa-fw fa-plus silver"></i></button>
+                <button class="btn btn-link stretched-link" type="button" data-toggle="collapse" data-target="#panel21519121" aria-expanded="false" aria-controls="header-9">ENGL 13450 | Some Course Title</button>
+              </h2>
+            </div>
+            <div id="panel21519121" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas rem nemo numquam id quibusdam quisquam vel cupiditate saepe, qui, harum cum laudantium sequi odio sed alias provident. Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
+      <!-- .col-sm-12       -->
     </div>
+    <!-- .row -->
 
   </div>
+  <!-- #wrapper .container -->
 
-  <!-- Back-to-top button -->
-  <a role="button" id="topper" data-toggle="tooltip" data-placement="top" title="Top" class="btn scroll-link" href="#top"><i class="fa fa-fw fa-2x fa-caret-up" aria-hidden="true"></i></a>
+  <!-- Acknowledge include -->
+    <div id="acknowledge"></div>
 
-  <!-- footer include -->
-  <div w3-include-html="footer.html"></div>
+  <!-- Footer include -->
+  <div id="page-footer"></div>
 
-  <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Back to top button -->
+  <a role="button" id="back-to-top" class="btn scroll-link" href="#top"><i class="fa fa-fw fa-2x fa-angle-up" aria-hidden="true"></i></a>
 
-  <!-- Bootstrap JS Library -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <div class="modal fade" id="modal-map-to-office" tabindex="-1" role="dialog" aria-labelledby="office-map-modal-label" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="office-map-modal-label">Map to my office</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img class="image-fluid dx-auto" src="img/map-to-my-office.png" alt="map to my office">
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- html file include script | used for navbar and footer -->
-  <script src="js/w3data.js"></script>
-  <script>
-    w3IncludeHTML()
-  </script>
+  <!-- jquery JS minified -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-  <!-- Local scripts -->
+  <!-- jquery ui -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- popper minified -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+  <!-- bootstrap JS minified -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- Main local scripts -->
   <script src="js/main.js"></script>
 
   <script>
-    $(document).ready(function() {
+    $(function() {
 
-      $("#navbar-include").load("navbar.html", function() {
+      // Load the top page navbar
+      $("#page-navbar").load("page-navbar.html", function() {
 
-        $("#home").removeClass("active");
+        $("#me").removeClass("active");
         $("#teaching").addClass("active");
 
       });
 
+      // Load the acknowledge footer
+      $("#acknowledge").load("acknowledge.html", function() {
+        console.log("acknowledge loaded");
+      });
+
+      // plus/minus toggler on opening/closing the accordions
+      $(".btn-link").on("click", function(e) {
+        // alert($(this).prev().find("i").text());
+        if ( $(this).prev().find("i").hasClass("fa-plus") && $(this).prev().find("i").hasClass("fa-rotate-45") ) {
+          $(this).prev().find("i").removeClass("fa-rotate-45");
+        } else {
+          $(this).prev().find("i").addClass("fa-rotate-45");
+        }
+
+      });
+
+      // Open all accordions at once
+
+
     });
+    // document.ready
   </script>
 
 </body>

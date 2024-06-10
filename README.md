@@ -1,12 +1,7 @@
-# Academic Website Template
+# Free as in beer!
+This template is free for you to use. It's licensed under MIT, as are most of the code libraries it employs to do its thing. However,  no  front-facing (on the parts of the website that people can see) attribution to me is necessary. Enjoy! And feel free to contact me if you get stuck with using it. Happy to answer questions about it.
 
-### Free as in beer
-This is a free thing. You may download this and use it to create your own website(s), as long as you abide by the license restrictions. As it specifies, there's no need to reference me, the creator of this work, on your own websites.
+# Cool, Cool, Cool ... How do I download it?
+Easy peasy lemon squeezy. Click the green code button and select Download ZIP. Now it's yours on your local machine. Edit your heart out and upload to any server you like. Github pages is a great place to put it, in fact. Lots of tutorials out there explaining this.
 
-### Buff this out further
-You may add additional components with the [Bootstrapr.io](https://bootstrapr.io) tool. Bootstrapr allows you to rapidly build custom Bootstrap 3 components, and even whole pages in seconds.
-
-Enjoy! If you like this template, drop me a line and let me know!
-
-### Navbar and footer
-The navbar and footer are included with javascript. This means that if you download this template and run it from your desktop, say, they'll seem to be missing. You'll only see them show if you're running it from a server, from hosting sites such as Netlify, Github Pages, Heroku, etc., or if you're viewing it from within a localhost server on your machine like Mamp/Wamp/Lamp.
+![alt text for screen readers](https://randal-sean-harrison.github.io/academic-website-template-bs4/img/download-image.png).
